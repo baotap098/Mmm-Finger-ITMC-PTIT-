@@ -1,17 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ChildEnemyBoss : MonoBehaviour {
+public class ChildEnemyBoss : MonoBehaviour
+{
+    [HideInInspector]
     public float speed;
-	// Use this for initialization
-	void Start () {
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        transform.Rotate(new Vector3(0, 0, speed));
-	}
-    
+    public GameObject gameManager;
+    private void Start()
+    {
+        gameManager = GameObject.Find("GameManager");
+    }
+    void Update()
+    {
+        if (gameManager.GetComponent<GameManager>().GameState == GameState.Playing)
+            transform.Rotate(new Vector3(0, 0, speed));
+    }
+
 }

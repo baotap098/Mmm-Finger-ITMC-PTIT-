@@ -1,19 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class RotateEnemy : MonoBehaviour {
-
+public class RotateEnemy : MonoBehaviour
+{
+    public GameObject gameManager;
     public float speed;
-    private Rigidbody2D rigidbody2D;
     // Use this for initialization
-	void Start () {
-        rigidbody2D = GetComponent<Rigidbody2D>();
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        transform.Rotate(new Vector3(0, 0, speed));
-	}
+    void Start()
+    {
+        gameManager = GameObject.Find("GameManager");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (gameManager.GetComponent<GameManager>().GameState == GameState.Playing)
+            transform.Rotate(new Vector3(0, 0, speed));
+    }
+    private void LateUpdate()
+    {
+
+    }
+    private void FixedUpdate()
+    {
+    }
 }
