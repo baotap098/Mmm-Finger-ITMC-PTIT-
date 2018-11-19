@@ -140,7 +140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &159539521
 MonoBehaviour:
@@ -230,7 +230,7 @@ MonoBehaviour:
   - {fileID: 1342555129729662, guid: ebdba874d39c793409bcd2a3739e2edf, type: 2}
   - {fileID: 1768055030479304, guid: 1a19217f64927be4d969d87472f89d4e, type: 2}
   - {fileID: 1506831221063752, guid: bcb1a93a5e306004682fac7fd278ab01, type: 2}
-  speedEmenyMove: 2
+  speedEmenyMove: 5
   timeCreate: 2
   gameManager: {fileID: 0}
 --- !u!4 &397224242
@@ -272,7 +272,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &598094035
 GameObject:
@@ -420,7 +420,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455980304997034, guid: 5a819f4b396db7a43a730712055da007, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a819f4b396db7a43a730712055da007, type: 2}
